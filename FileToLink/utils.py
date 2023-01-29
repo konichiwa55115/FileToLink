@@ -2,7 +2,8 @@ from FileToLink.client import bot
 from FileToLink.config import Config, Strings
 
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
 
 
 async def participant(user_id: int):
