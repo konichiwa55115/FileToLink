@@ -2,25 +2,25 @@ import os
 
 
 class Config:
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    Token = os.environ.get("BOT_TOKEN")
-    Session = os.environ.get("Session_String")
+    API_ID = int(17983098)
+    API_HASH = "ee28199396e0925f1f44d945ac174f64"
+    Token = "6165770459:AAFEgNaxaLJDGJGw6NIstrwtyuvw3EYebFs"
+    Session = ":memory:"
     if Session is None or Session == "":
         Session = ":memory:"
-    App_Name = os.environ.get("APP_NAME")
-    Port = int(os.environ.get("PORT"))
-    Archive_Channel_ID = int(os.environ.get("ARCHIVE_CHANNEL_ID"))
-    Start_Message = os.environ.get("Start_Message")
-    Bot_Channel = os.environ.get("Bot_Channel_UserName")
+    App_Name = "dangerours51151551651165"
+    Port = "10000"
+    Archive_Channel_ID = int(-1001683878954)
+    Start_Message = None
+    Bot_Channel = None
     if Bot_Channel and Bot_Channel.startswith("@"):
         Bot_Channel = Bot_Channel[1:]
     elif Bot_Channel == "":
         Bot_Channel = None
 
-    Link_Root = f"https://{App_Name}.herokuapp.com/"
+    Link_Root = f"https://dangerours51151551651165.onrender.com/"
     Download_Folder = "Files"
-    Dev_Channel = "shadow_bots"
+    Dev_Channel = None
     Bot_UserName = None  # The bot will set it after starting
     Part_size = 1024 * 1024  # (1MB) For Pyrogram
     Buffer_Size = 512 * 1024  # For Quart
