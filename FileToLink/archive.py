@@ -1,5 +1,9 @@
 from pyrogram import filters
-from pyrogram.types import (Message, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, User)
+from pyrogram.types.user_and_chats.user import User
+from pyrogram.types.messages_and_media.message import Message
+from pyrogram.types.bots_and_keyboards.callback_query import CallbackQuery
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
 from pyrogram.errors.exceptions import ButtonDataInvalid
 
 from FileToLink import bot, Config, Strings
