@@ -7,8 +7,10 @@ from hypercorn import Config as HypercornConfig
 from pyrogram import filters
 from pyrogram.errors import AuthKeyDuplicated, AuthKeyInvalid, SessionRevoked, SessionExpired
 from pyrogram.methods.utilities.idle import idle
-from pyrogram.storage import MemoryStorage
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.storage.memory_storage import MemoryStorage
+from pyrogram.types.messages_and_media.message import Message
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
 
 from FileToLink import bot, Config, Strings
 from FileToLink.archive import archive_msg
