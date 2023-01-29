@@ -5,8 +5,9 @@ import aiofiles
 from pyrogram import Client, raw, utils, types
 from pyrogram.errors import AuthBytesInvalid
 from pyrogram.file_id import FileId, FileType, ThumbnailSource, PHOTO_TYPES
-from pyrogram.session import Auth, Session
-from pyrogram.storage import Storage
+from pyrogram.session.session import Session
+from pyrogram.session.auth import Auth
+from pyrogram.storage.storage import Storage
 
 from FileToLink.config import Config
 
